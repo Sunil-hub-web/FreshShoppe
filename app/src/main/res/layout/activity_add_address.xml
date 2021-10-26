@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.AddAddress">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty"
+            android:elevation="@dimen/five">
+
+            <ImageView
+                android:id="@+id/backicon"
+                android:layout_width="@dimen/forty_five"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_icon"
+                android:padding="@dimen/five"
+                android:tint="@color/colorAccent"/>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-3dp"
+                android:layout_toRightOf="@+id/backicon"
+                android:fontFamily="@font/sans_regular"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:text="Add Address"
+                android:textColor="@color/textcol"
+                android:textSize="@dimen/seventeen" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="Enter name"
+                android:background="@drawable/plus_minus_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:singleLine="true"
+                />
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter full address"
+                android:background="@drawable/plus_minus_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:singleLine="true"
+
+                />
+
+            <Spinner
+                android:id="@+id/edt_state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="ENTER STATE"
+                android:background="@drawable/plus_minus_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:singleLine="true"
+
+                />
+
+            <Spinner
+                android:id="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="ENTER COUNTRY NAME"
+                android:background="@drawable/plus_minus_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:singleLine="true" />
+
+            <Spinner
+                android:id="@+id/edt_pin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="ENTER PIN"
+                android:background="@drawable/plus_minus_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+
+                />
+
+
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter phone number"
+                android:background="@drawable/plus_minus_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="15dp"
+                android:singleLine="true"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/default_address"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginLeft="@dimen/ten"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/check_default"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/check_default"
+                    android:layout_marginLeft="5dp"
+                    android:text="Make this address Default"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="start|center"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/save_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="40dp"
+                android:text="Save and Proceed"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

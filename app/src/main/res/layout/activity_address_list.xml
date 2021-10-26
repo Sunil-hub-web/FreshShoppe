@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.AddressList">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty"
+            android:elevation="@dimen/five">
+
+            <ImageView
+                android:id="@+id/backicon"
+                android:layout_width="@dimen/forty_five"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_icon"
+                android:padding="@dimen/five"
+                android:tint="@color/colorAccent"/>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-3dp"
+                android:layout_toRightOf="@+id/backicon"
+                android:fontFamily="@font/sans_regular"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/ten"
+                android:text="Address List"
+                android:textColor="@color/textcol"
+                android:textSize="@dimen/seventeen" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/address_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_above="@+id/save_proceed"
+        android:layout_below="@+id/header"/>
+
+
+    <Button
+        android:id="@+id/save_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty_five"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Add Address"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

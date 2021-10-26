@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activities.ProfileEdit">
+
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="@dimen/fifty"
+        android:layout_height="@dimen/fifty"
+        android:padding="@dimen/ten"
+        android:scaleType="centerCrop"
+        android:tint="@color/button_color"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:layout_toRightOf="@+id/back_img"
+        android:fontFamily="@font/sans_regular"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/ten"
+        android:text="Profile"
+        android:textColor="@color/textcol"
+        android:textSize="@dimen/seventeen" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twenty"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:layout_above="@+id/numberlayout"
+                android:fontFamily="@font/raleway"/>
+
+            <RelativeLayout
+                android:id="@+id/nm_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_above="@+id/sendotp_btn"
+                android:layout_marginBottom="@dimen/thirty">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <EditText
+                        android:id="@+id/name_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/eighteen"
+                        android:fontFamily="@font/sans_regular"
+                        android:inputType="textEmailAddress"
+                        android:hint="Name"
+                        android:text=""
+                        android:paddingLeft="@dimen/three"
+                        android:background="@color/transparent"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorGrey2"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/mobiletxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile No."
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:layout_above="@+id/numberlayout"
+                android:fontFamily="@font/raleway"/>
+
+
+            <RelativeLayout
+                android:id="@+id/numberlayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_above="@+id/sendotp_btn"
+                android:layout_marginBottom="@dimen/thirty">
+
+                <RelativeLayout
+                    android:id="@+id/leftlayout"
+                    android:layout_width="@dimen/eighty"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/flag"
+                        android:layout_width="@dimen/thirty"
+                        android:layout_height="@dimen/thirty"
+                        android:src="@drawable/flag_icon"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:id="@+id/countrycode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/eighteen"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/flag"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sans_regular"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorGrey2"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_toRightOf="@+id/leftlayout">
+
+
+                    <EditText
+                        android:id="@+id/phone_number_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/eighteen"
+                        android:fontFamily="@font/sans_regular"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:hint="Mobile number"
+                        android:text=""
+                        android:paddingLeft="@dimen/three"
+                        android:background="@color/transparent"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorGrey2"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:layout_above="@+id/numberlayout"
+                android:fontFamily="@font/raleway"/>
+
+            <RelativeLayout
+                android:id="@+id/email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_above="@+id/sendotp_btn"
+                android:layout_marginBottom="@dimen/thirty">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <EditText
+                        android:id="@+id/email_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/eighteen"
+                        android:fontFamily="@font/sans_regular"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email"
+                        android:text=""
+                        android:paddingLeft="@dimen/three"
+                        android:background="@color/transparent"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorGrey2"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sendotp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:background="@drawable/box3"
+                android:layout_alignParentBottom="true"
+                android:text="Submit"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen"
+                android:fontFamily="@font/raleway"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

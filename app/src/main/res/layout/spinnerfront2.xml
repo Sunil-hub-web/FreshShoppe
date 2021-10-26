@@ -1,0 +1,30 @@
+<!--<RelativeLayout -->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="50dp"-->
+<!--android:orientation="horizontal"-->
+<!--android:textColor="@color/black"-->
+<!--android:background="@drawable/spinner_bg">-->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+    android:gravity="center_vertical"
+    android:maxLines="1"
+    android:text="dvdf vc"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:drawableTint="@color/white"
+    android:textColor="@color/colorGrey2"
+    android:textSize="12sp" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:src="@drawable/dropdown"-->
+    <!--android:padding="15dp"-->
+    <!--android:background="@color/colorPrimary"/>-->
+
+
+    <!--</RelativeLayout>-->

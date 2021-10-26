@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/two_hundred">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabIndicatorGravity="center" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/seventy"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="@dimen/five"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sixty"
+                        android:layout_weight="1"
+                        android:src="@drawable/easy_shipping"
+                        android:tint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sixty"
+                        android:layout_weight="1"
+                        android:src="@drawable/hygine"
+                        android:tint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sixty"
+                        android:layout_weight="1"
+                        android:src="@drawable/halal"
+                        android:tint="@color/white" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sixty"
+                        android:layout_weight="1"
+                        android:src="@drawable/fresh_healthy"
+                        android:tint="@color/white" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:fontFamily="@font/sans_regular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ten"
+                    android:text="Our Categories"
+                    android:textColor="@color/textcol"
+                    android:textSize="@dimen/seventeen" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_cats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:fontFamily="@font/sans_regular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ten"
+                    android:text="Our Combos"
+                    android:textColor="@color/textcol"
+                    android:textSize="@dimen/seventeen" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_combo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hundred"
+                    android:layout_marginTop="@dimen/five"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="@dimen/five"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ad_banner1" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:fontFamily="@font/sans_regular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ten"
+                    android:text="Our Products"
+                    android:textColor="@color/textcol"
+                    android:textSize="@dimen/seventeen" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyle_iem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ImageView
+            android:id="@+id/noconnection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/connection_error"
+            android:visibility="gone"
+            android:scaleType="centerCrop"/>
+
+
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

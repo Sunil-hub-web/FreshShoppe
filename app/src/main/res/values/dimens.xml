@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="one">1dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="six">6dp</dimen>
+    <dimen name="seven">7dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="nine">9dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="eleven">11dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <dimen name="thirteen">13dp</dimen>
+    <dimen name="fourteen">14dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="seventeen">17dp</dimen>
+    <dimen name="eighteen">18dp</dimen>
+    <dimen name="nineteen">19dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="twenty_one">21dp</dimen>
+    <dimen name="twenty_two">22dp</dimen>
+    <dimen name="twenty_three">23dp</dimen>
+    <dimen name="twenty_four">24dp</dimen>
+    <dimen name="twenty_five">25dp</dimen>
+    <dimen name="twenty_six">26dp</dimen>
+    <dimen name="twenty_seven">27dp</dimen>
+    <dimen name="twenty_eight">28dp</dimen>
+    <dimen name="twenty_nine">29dp</dimen>
+    <dimen name="thirty">30dp</dimen>
+    <dimen name="forty">40dp</dimen>
+    <dimen name="forty_five">45dp</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="sixty">60dp</dimen>
+    <dimen name="seventy">70dp</dimen>
+    <dimen name="eighty">80dp</dimen>
+    <dimen name="ninety">90dp</dimen>
+    <dimen name="hundred">100dp</dimen>
+    <dimen name="hundred_twenty">120dp</dimen>
+    <dimen name="hundred_fifty">150dp</dimen>
+    <dimen name="hundred_eighty">180dp</dimen>
+    <dimen name="two_hundred">200dp</dimen>
+    <dimen name="two_hundred_fifty">250dp</dimen>
+    <dimen name="three_hundred">300dp</dimen>
+
+
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+
+    <dimen name="mdtp_date_picker_component_width">270dp</dimen>
+    <dimen name="mdtp_date_picker_component_width_v2">290dp</dimen>
+    <dimen name="mdtp_date_picker_header_height">-2dp</dimen>
+    <dimen name="mdtp_date_picker_title_height">30dp</dimen>
+    <dimen name="mdtp_selected_date_height">140dp</dimen>
+    <dimen name="mdtp_date_picker_view_animator_height">252dp</dimen>
+    <dimen name="mdtp_date_picker_view_animator_height_v2">320dp</dimen>
+    <dimen name="mdtp_date_picker_view_animator_padding">8dp</dimen>
+    <dimen name="mdtp_date_picker_view_animator_padding_v2">16dp</dimen>
+
+    <dimen name="mdtp_month_list_item_header_height">56dp</dimen>
+    <dimen name="mdtp_month_list_item_header_height_v2">64dp</dimen>
+    <dimen name="mdtp_month_day_label_text_size">12sp</dimen>
+    <dimen name="mdtp_day_number_select_circle_radius">16dp</dimen>
+    <dimen name="mdtp_day_number_select_circle_radius_v2">20dp</dimen>
+    <dimen name="mdtp_day_highlight_circle_radius">2dp</dimen>
+    <dimen name="mdtp_day_highlight_circle_margin">5dp</dimen>
+    <dimen name="mdtp_selected_date_year_size">25dp</dimen>
+    <dimen name="mdtp_selected_date_day_size">70dp</dimen>
+    <dimen name="mdtp_selected_date_month_size">25dp</dimen>
+    <dimen name="mdtp_date_picker_header_text_size">12dp</dimen>
+    <dimen name="mdtp_month_label_size">14sp</dimen>
+    <dimen name="mdtp_day_number_size">12sp</dimen>
+    <dimen name="mdtp_year_label_height">64dp</dimen>
+    <dimen name="mdtp_year_label_text_size">22dp</dimen>
+
+    <dimen name="mdtp_datepicker_selection_text_size">30sp</dimen>
+    <dimen name="mdtp_datepicker_year_selection_text_size">16sp</dimen>
+
+    <dimen name="mdtp_material_button_height">48dp</dimen>
+    <dimen name="mdtp_material_button_textsize">14sp</dimen>
+    <dimen name="mdtp_material_button_minwidth">64dp</dimen>
+    <dimen name="mdtp_material_button_textpadding_horizontal">8dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

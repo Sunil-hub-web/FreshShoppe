@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_dash_board">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty">
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menu_icon"
+                    android:padding="@dimen/eight"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/app_logo"
+                    android:layout_toRightOf="@+id/menu"
+                    android:layout_toLeftOf="@+id/cart_layout"
+                    android:paddingBottom="@dimen/two"
+                    android:paddingLeft="@dimen/two"
+                    android:paddingRight="@dimen/two"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/search_icon"
+                    android:layout_toLeftOf="@+id/cart_layout"
+                    android:tint="@color/colorAccent"
+                    android:padding="@dimen/ten"/>
+                
+                
+                <RelativeLayout
+                    android:id="@+id/cart_layout"
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/fifty"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/cart_icon"
+                        android:tint="@color/colorAccent"
+                        android:padding="@dimen/eight"/>
+
+                    <TextView
+                        android:id="@+id/itemcounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/five"
+                        android:text=""
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorGrey2"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                    
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        android:layout_below="@+id/header"
+        app:navGraph="@navigation/mobile_navigation" />
+</RelativeLayout>

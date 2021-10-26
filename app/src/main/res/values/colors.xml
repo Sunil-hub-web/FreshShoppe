@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5EA533</color>
+    <color name="colorPrimaryDark">#5EA533</color>
+    <color name="colorAccent">#EA4335</color>
+    <color name="colorGreenDark">#275800</color>
+    <!--    <color name="ic_launcher_background">#FFFFFF</color>-->
+    <color name="landingpage_text">#3A3734</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="edittext_bg">#EBEBEB</color>
+    <color name="button_color">#FD6E4F</color>
+
+    <color name="textcol">#FF4A4A4A</color>
+    <color name="box2color">#CCCCCC</color>
+
+    <color name="colorGrey">#CECECE</color>
+    <color name="colorGrey1">#888888</color>
+    <color name="colorGrey2">#5A5A5A</color>
+    <color name="red">#ff0000</color>
+    <color name="price">#9B9B9B</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="btn_color">#408401</color>
+
+    <color name="facebook_color">#3b5998</color>
+    <color name="google_color">#db4a39</color>
+    <color name="twitter_color">#3498d6</color>
+    <color name="linked_color">#007765</color>
+
+    <color name="search_bar">#61640f</color>
+
+    <color name="btn_yellow">#ffd518</color>
+
+    <color name="mdtp_white">#ffffff</color>
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_focused">#76ffffff</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+    <color name="mdtp_date_picker_text_normal">#ff212121</color>
+    <color name="mdtp_date_picker_text_highlighted">@color/mdtp_date_picker_text_normal</color>
+    <color name="mdtp_date_picker_text_disabled">#ccc</color>
+    <color name="mdtp_date_picker_month_day">#767676</color>
+
+    <!-- DatePicker Dark Theme -->
+
+    <color name="mdtp_date_picker_text_normal_dark_theme">@color/mdtp_white</color>
+    <color name="mdtp_date_picker_month_day_dark_theme">#b4b4b4</color>
+    <color name="mdtp_date_picker_text_disabled_dark_theme">#767676</color>
+    <color name="mdtp_date_picker_text_highlighted_dark_theme">
+        @color/mdtp_date_picker_text_normal_dark_theme
+    </color>
+
+    <color name="mdtp_calendar_header">@color/mdtp_accent_color_dark</color>
+    <color name="mdtp_date_picker_view_animator">@android:color/white</color>
+
+    <color name="mdtp_button_color">@color/mdtp_accent_color</color>
+    <color name="mdtp_button_selected">#33969696</color>
+</resources>

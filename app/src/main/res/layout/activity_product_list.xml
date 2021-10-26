@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activities.ProductList">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:elevation="@dimen/five">
+
+                <ImageView
+                    android:id="@+id/backicon"
+                    android:layout_width="@dimen/forty_five"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/five"
+                    android:src="@drawable/back_icon"
+                    android:tint="@color/colorAccent" />
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_toRightOf="@+id/backicon"
+                    android:fontFamily="@font/sans_regular"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ten"
+                    android:text="Items"
+                    android:textColor="@color/textcol"
+                    android:textSize="@dimen/seventeen" />
+
+                <ImageView
+                    android:id="@+id/searchicon"
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="@dimen/fifty"
+                    android:padding="@dimen/ten"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:layout_toLeftOf="@+id/cart_layout"
+                    android:tint="@color/colorAccent" />
+
+                <RelativeLayout
+                    android:id="@+id/cart_layout"
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/fifty"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/eight"
+                        android:src="@drawable/cart_icon"
+                        android:tint="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/itemcounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/five"
+                        android:text=""
+                        android:textColor="@color/colorGrey2"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/searchlay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:visibility="gone"
+                android:layout_below="@+id/header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/box"
+                    android:layout_margin="@dimen/five">
+
+                    <EditText
+                        android:id="@+id/searchtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/eight"
+                        android:paddingRight="@dimen/eight"
+                        android:drawableTint="@color/colorPrimary"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/raleway"
+                        android:textSize="@dimen/sixteen"
+                        android:layout_toLeftOf="@+id/closeicon"
+                        android:background="@color/transparent"
+                        android:hint="Search.."/>
+
+                    <ImageView
+                        android:id="@+id/closeicon"
+                        android:layout_width="@dimen/forty"
+                        android:layout_height="@dimen/forty"
+                        android:src="@drawable/ic_close_black_24dp"
+                        android:tint="@color/button_color"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/eight"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:id="@+id/filterlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy"
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        android:padding="@dimen/eight"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_toRightOf="@+id/backicon"
+            android:fontFamily="@font/sans_regular"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ten"
+            android:text="Filter by : "
+            android:textColor="@color/textcol"
+            android:textSize="@dimen/fourteen" />
+
+        <Spinner
+            android:id="@+id/itemfolter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:prompt="@string/promtt"
+            android:spinnerMode="dialog"
+            android:text="Shipping"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyle_iem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/noconnection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/connection_error"
+                android:visibility="gone"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/noproductfound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_not_found"
+                android:visibility="gone"
+                android:scaleType="fitXY"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
